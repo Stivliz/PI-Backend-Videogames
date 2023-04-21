@@ -41,7 +41,7 @@ const getIdVideogame = async (req, res) => {
         //una solicitud/peticion a la API para obtener información del juego.
         if(!(id.match(/^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/))){
 
-            const idGameApi = await axios.get(`https://api.rawg.io/api/games/${id}?key=${API_KEY}`)
+            const idGameApi = await axios.get(`https://api.rawg.io/api/games/${id}?key=e3815659c22e4b46a3a8372896f333e4`)
             const gameApi = idGameApi?.data
             const idVideogame = {
                 name: gameApi.name,

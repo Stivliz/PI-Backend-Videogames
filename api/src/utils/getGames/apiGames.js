@@ -12,7 +12,7 @@ const infoApi = async () => {
         //Creo un for, para traerme la informacion de las primeras 5 paginas.
         for(let i = 1; i <= NUM_PAGES; i++){
         
-        const response = await axios(`https://api.rawg.io/api/games?key=${API_KEY}&page=${i}`)
+        const response = await axios(`https://api.rawg.io/api/games?key=e3815659c22e4b46a3a8372896f333e4&page=${i}`)
         response?.data.results.map((game) => {
             games.push({
                 id: game.id,
